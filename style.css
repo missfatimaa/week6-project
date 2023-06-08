@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url('images/clouds.jpg');
+    background-size: cover;
+    background-position: 0px;
+    background-repeat: no-repeat;
+}
+.day,.middle-head,.header,.footer-left,.next-temp{
+    font-family: 'IBM Plex Mono', monospace;
+
+}
+.content {
+    background-color: rgba(128, 142, 156, 0.469);
+    width: 70%;
+    height: 85vh;
+    margin: 3% auto;
+    border-radius: 5px;
+}
+
+.header {
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.form-control {
+    margin-left: 2px;
+}
+
+.form-control:focus {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin-left: 0;
+}
+
+.middle {
+    padding: 10px 20px;
+    background: url('images/tehran.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50vh;
+}
+
+.middle-head {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 100px;
+    justify-content: space-between;
+    padding: 0 12px;
+}
+
+.location {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.location i,
+.current-loc,
+.time,
+.searched ,.humidity,.wind,.description{
+    color: rgba(255, 255, 255, 0.909);
+}
+.location i::before{
+    cursor: pointer;
+}
+.location i {
+    font-size: 50px;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+}
+.temp {
+    font-size: 100px;
+}
+
+.date {
+    font-size: 15px;
+    transform: translateY(-29px);
+    margin-left: 15px;
+}
+
+.current-loc {
+    font-size: 16px;
+}
+
+.time {
+    font-size: 15px;
+}
+
+.searched {
+    font-size: 25px;
+    line-height: 90px;
+}
+
+
+
+.week-days {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: rgba(0, 0, 0, 0.774);
+}
+
+.day {
+    text-align: center;
+    font-weight: bold;
+}
+
+.day-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+
+}
+
+.icons img {
+    width: 60px;
+    height: 60px;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    transform: translateY(-14px);
+}
+
+.resource{
+    text-align: center;
+}

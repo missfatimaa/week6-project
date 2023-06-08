@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App Project</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="images/logo.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+</head>
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">
+            <header>
+                <div class="header">
+                    <div class="p-1 bg-light rounded rounded-pill shadow-sm mb-4">
+                        <div class="input-group">
+                            <input type="search" placeholder="Which city are you searching for?"
+                                aria-describedby="button-addon1" class="form-control border-0 bg-light search"
+                                id="city-input">
+                            <div class="input-group-append">
+                                <button id="button-addon1" type="submit" class="btn btn-link text-primary"><i
+                                        class="fa fa-search"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="middle">
+                <div class="middle-head">
+                    <div class="right">
+                        <span class="location">
+                            <i class="fa fa-globe icon" id="button"></i>
+                            <span class="current-loc">
+                                Iran,Shahrood
+                            </span>
+                            <Span class="time" id="date">
+
+                            </Span>
+                        </span>
+                    </div>
+                    <div class="left">
+                        <span class="searched" id="city">
+                            Iran,Tehran
+                        </span>
+                        <span class="humidity">Humidity: <span id="humidity"></span>%
+                        </span>
+                        <span class="wind">
+                            Wind: <span id="wind"></span>km/h
+                        </span>
+                        <span class="description" id="description">
+
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <div class="footer">
+                    <div class="week-days">
+                        <div class="footer-left">
+                            <span class="temp">
+                                <span><span id="temperature"></span>°</span> <br>
+                            </span>
+                            <span class="date" id="dateData">
+                                05/05/2023
+                            </span>
+                        </div>
+                        <div class="day-items">
+                            <span class="day">
+                                Saturday
+                            </span>
+                            <span class="icons">
+                                <img src="images/cloud.png" alt="cloud icon">
+                            </span>
+                            <span class="next-temp">
+                                30°
+                            </span>
+                        </div>
+
+                        <div class="day-items">
+                            <span class="day">
+                                Sunday
+                            </span>
+                            <span class="icons">
+                                <img src="images/wind.png" alt="wind icon">
+                            </span>
+                            <span class="next-temp">
+                                20°
+                            </span>
+                        </div>
+                        <div class="day-items">
+                            <span class="day">
+                                Monday
+                            </span>
+                            <span class="icons">
+                                <img src="images/rain.png" alt="rain icon">
+                            </span>
+                            <span class="next-temp">
+                                25°
+                            </span>
+                        </div>
+
+                        <div class="day-items">
+                            <span class="day">
+                                Tuesday
+                            </span>
+                            <span class="icons">
+                                <img src="images/rainy-day.png" alt="rainy icon">
+                            </span>
+                            <span class="next-temp">
+                                29°
+                            </span>
+                        </div>
+                        <div class="day-items">
+                            <span class="day">
+                                Wednesday
+                            </span>
+                            <span class="icons">
+                                <img src="images/sunny.png" alt="sun icon">
+                            </span>
+                            <span class="next-temp">
+                                35°
+                            </span>
+                        </div>
+                    </div>
+                <div class="resource">this is a GitHub resource <a href="">Here</a>!</div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="java.js"></script>
+</body>
+
+</html>
